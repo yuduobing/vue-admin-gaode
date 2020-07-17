@@ -57,7 +57,7 @@ const myRouter=new Router({
 
     ]
 })
-// 后续token验证拦截
+// 后续token验证拦截a
 myRouter.beforeEach((to,from,next)=>{
     // 进度条gongju
     NProgress.start()
