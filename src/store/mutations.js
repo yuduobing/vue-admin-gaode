@@ -1,0 +1,28 @@
+import {
+    myRouter
+} from '@/router/index'
+const mutations = {
+    //保存token
+    COMMIT_TOKEN(state, object) {
+        state.token = object.token;
+    },
+    //保存标签
+    TAGES_LIST(state, arr) {
+        state.tagsList = arr;
+    },
+    IS_COLLAPSE(state, bool) {
+        state.isCollapse = bool;
+    },
+    //保存用户
+    COMMIT_ROLE(state, roles) {
+        state.roles = roles
+    },
+    GET_LANGUAGE(state,lang){
+        state.lang=lang
+    },
+    SET_BREAD(state,breadList){
+        state.breadList=breadList
+    }
+}
+//改变state的值必须经过mutations
+export default mutations

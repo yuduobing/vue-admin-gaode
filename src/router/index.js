@@ -15,14 +15,49 @@ const getComponent = (name,component) => () => import(`@/views/${name}/${compone
 const myRouter=new Router({
     routes: [
         {
+            path: '/login',
+            name: 'login',
+            component: getComponent('login', 'index')
+        },
+        {
             path: '/',
-            redirect: '/home',
+            redirect: '/login',
             component: getComponent('login','index')
+        },
+        {
+            path:'/home',
+            component: getComponent('layout','Layout'),
+            children:[{
+                path: '/home',
+                component: getComponent('index', 'index'),
+                meta: {
+                    title: '主页面'
+                }
+                },
+
+                {
+                    path: '/test1-1',
+                    component: getComponent('test1/test1-1', 'index'),
+                    meta: {
+                        title: '测试页面1'
+                    }
+                },
+
+                {
+                    path: '/test1-2',
+                    component: getComponent('test1/test1-1', 'index'),
+                    meta: {
+                        title: '测试页面2'
+                    }
+                }
+
+            ]
+
         }
 
     ]
 })
-//后续token验证拦截
+// 后续token验证拦截
 myRouter.beforeEach((to,from,next)=>{
     // 进度条gongju
     NProgress.start()
