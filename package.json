@@ -11,6 +11,7 @@
     "@riophae/vue-treeselect": "^0.0.38",
     "axios": "^0.19.0",
     "clipboard": "^2.0.4",
+    "core-js": "^3.6.5",
     "echarts": "^4.2.1",
     "element-ui": "^2.10.1",
     "normalize.css": "^8.0.1",
@@ -29,9 +30,10 @@
     "vue2-editor": "^2.9.1",
     "vuedraggable": "^2.23.0",
     "vuex": "^3.1.1",
-    "core-js": "^3.6.5",
     "vuex-persistedstate": "^2.5.4",
-    "webpack-cdn-plugin": "^3.1.4"
+    "vxe-table": "^2.9.15",
+    "webpack-cdn-plugin": "^3.1.4",
+    "xe-utils": "^2.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

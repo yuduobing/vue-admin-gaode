@@ -6,6 +6,11 @@ export const menu = [
     title: "系统首页"
   },
   {
+    icon: "el-icon-news",
+    index: "cgkl",
+    title: "厂库管理"
+  },
+  {
     icon: "el-icon-edit",
     index: "test1",
     title: "测试页面1",

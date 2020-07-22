@@ -17,7 +17,7 @@ const myRouter=new Router({
         {
             path: '/login',
             name: 'login',
-            component: getComponent('login', 'index')
+            component: getComponent('layout', 'Layout')
         },
         {
             path: '/',
@@ -48,6 +48,13 @@ const myRouter=new Router({
                     component: getComponent('test1/test1-1', 'index'),
                     meta: {
                         title: '测试页面2'
+                    }
+                },
+                {
+                    path: '/cgkl',
+                    component: getComponent('ckgl', 'index'),
+                    meta: {
+                        title: '产库管理'
                     }
                 }
 

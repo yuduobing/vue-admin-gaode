@@ -6,7 +6,13 @@ import './assets/css/public.css'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { messages } from './assets/js/common'
+import { messages } from './assets/js/common';
+
+import 'xe-utils'
+import VXETable from 'vxe-table'
+import 'vxe-table/lib/index.css'
+
+Vue.use(VXETable)
 //生产模式的消息
 Vue.config.productionTip = false
 Vue.use(ElementUI);

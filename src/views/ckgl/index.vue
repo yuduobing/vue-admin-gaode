@@ -4,7 +4,12 @@
     * Date: 2020/7/13 10:41
     * Content:
    -->
-   <div>测试页面2</div>
+    <div>
+
+        厂库管理
+
+    </div>
+    
 </template>
 
 <script>
